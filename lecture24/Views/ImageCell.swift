@@ -18,6 +18,7 @@ class ImageCell: UICollectionViewCell {
         return imageView
     }()
     
+    //    MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageView)
@@ -28,10 +29,20 @@ class ImageCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func updatecell(with image: UIImage) {
-        imageView.image = image
+//    MARK: - Functions
+    public func updateCell(with imageUrl: URL?) {
+        guard let imageUrl = imageUrl else {
+            imageView.image = nil
+            return
+        }
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: imageUrl), let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
+        }
     }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         self.imageView.image = nil

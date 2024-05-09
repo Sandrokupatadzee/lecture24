@@ -17,8 +17,7 @@ extension SecondScreen: UICollectionViewDelegateFlowLayout, UICollectionViewData
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath) as? ImageCell else {
             fatalError("Could not dequeue reusable cell")
         }
-        let image = images[indexPath.row]
-        cell.updatecell(with: image)
+        cell.updateCell(with: viewModel.imageUrl)
         return cell
     }
     

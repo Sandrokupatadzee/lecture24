@@ -21,6 +21,7 @@
 		52F7BF952BED17FC006C5FC3 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BF942BED17FB006C5FC3 /* ImageModel.swift */; };
 		52F7BF972BED1B7D006C5FC3 /* GalleryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BF962BED1B7D006C5FC3 /* GalleryCellViewModel.swift */; };
 		52F7BF9B2BED1CDC006C5FC3 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BF9A2BED1CDC006C5FC3 /* UIImageViewExtension.swift */; };
+		52F7BF9D2BED61F0006C5FC3 /* SecondScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BF9C2BED61F0006C5FC3 /* SecondScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		52F7BF942BED17FB006C5FC3 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		52F7BF962BED1B7D006C5FC3 /* GalleryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCellViewModel.swift; sourceTree = "<group>"; };
 		52F7BF9A2BED1CDC006C5FC3 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		52F7BF9C2BED61F0006C5FC3 /* SecondScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				52F7BF8E2BEC255A006C5FC3 /* SecondScreen.swift */,
+				52F7BF9C2BED61F0006C5FC3 /* SecondScreenViewModel.swift */,
 				52F7BF922BECE661006C5FC3 /* Extensions2.swift */,
 			);
 			path = SecondScreen;
@@ -272,6 +275,7 @@
 			files = (
 				52F7BF8A2BEC0F8E006C5FC3 /* GalleryCell.swift in Sources */,
 				52F7BF972BED1B7D006C5FC3 /* GalleryCellViewModel.swift in Sources */,
+				52F7BF9D2BED61F0006C5FC3 /* SecondScreenViewModel.swift in Sources */,
 				52F7BF862BEC08F7006C5FC3 /* MainScreen.swift in Sources */,
 				52F7BF8C2BEC1D0B006C5FC3 /* Extensions.swift in Sources */,
 				52F7BF932BECE662006C5FC3 /* Extensions2.swift in Sources */,

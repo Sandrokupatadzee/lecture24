@@ -10,7 +10,6 @@ import Foundation
 struct ScreenImage: Decodable, Hashable {
     let urls: URLS
 }
-
 struct URLS: Decodable, Hashable {
     let regular: String
 }

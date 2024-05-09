@@ -56,6 +56,7 @@ class MainScreen: UIViewController {
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        
         collectionView.delegate = self
     }
     
@@ -95,9 +96,10 @@ class MainScreen: UIViewController {
 
 extension MainScreen: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let selectedImage = dataSource.itemIdentifier(for: indexPath) else { return } 
-        print(selectedImage)
-//        let secondScreen = SecondScreen(selectedImage: selectedImage)
-//        navigationController?.pushViewController(secondScreen, animated: true)
+        guard dataSource.itemIdentifier(for: indexPath) != nil else {
+            return
+        }
+        let secondScreen = SecondScreen(images: images, selectedIndex: indexPath.item)
+        navigationController?.pushViewController(secondScreen, animated: true)
     }
 }
