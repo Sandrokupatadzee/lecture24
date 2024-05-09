@@ -1,0 +1,15 @@
+{
+  "originHash" : "5015a54d6776d5e6c7f4ab508d3fc1f6c5327496628600e832dc4d08a9fda56d",
+  "pins" : [
+    {
+      "identity" : "networkings",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Sandrokupatadzee/Networkings",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d4aa7bc3eccc9701153557cf576fcdbb987eb6d"
+      }
+    }
+  ],
+  "version" : 3
+}
